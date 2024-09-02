@@ -1,0 +1,40 @@
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+.env/
+
+# Django settings
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+*.py[cod]
+*~
+*.swp
+.DS_Store
+*.pyo
+*.out
+*.log
+*.lock
+.vscode/
+.idea/
+
+# Secrets and environment variables
+.env
+.env.*
+
+# Static and media files
+staticfiles/
+media/
+
+# RabbitMQ related
+celerybeat-schedule
+celerybeat.pid
+
+# PyCharm project files
+*.iml
+.idea/
