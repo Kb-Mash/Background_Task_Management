@@ -28,7 +28,7 @@ class Command(BaseCommand):
             print(f"Received task: {task}")
 
             # Process the task (send email)
-            send_welcome_email(task['email'], task['name'])
+            send_welcome_email(task['email'], task['username'])
             # Acknowledge the task is done
             ch.basic_ack(delivery_tag=method.delivery_tag)
 

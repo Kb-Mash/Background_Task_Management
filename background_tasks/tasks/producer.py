@@ -3,7 +3,7 @@ import json
 from django.conf import settings
 
 # Publish Task
-def send_task_to_queue(email, message, subject):
+def send_welcome_email_to_queue(email, username):
     # Get RabbitMQ connection settings
     rabbitmq_settings = settings.RABBITMQ
 
@@ -22,8 +22,7 @@ def send_task_to_queue(email, message, subject):
     # Create a task object to send
     task = {
         'email': email,
-        'message': message,
-        'subject': subject,
+        'username': username,
     }
 
     # Send the task to the queue
